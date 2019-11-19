@@ -1,0 +1,422 @@
+@charset "utf-8";
+
+/* 2019.10.11 kang nuri */
+/* common.css */
+
+
+/**************************************************/
+
+/* font_guide */
+
+/* noto-sans-kr-regular - korean_latin */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/noto-sans-kr-v12-korean_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),
+  	url('../fonts/noto-sans-kr-v12-korean_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-regular.woff') format('woff'), /* Modern Browsers */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-regular.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+
+/* noto-sans-kr-500 - korean_latin */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/noto-sans-kr-v12-korean_latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'),
+  	url('../fonts/noto-sans-kr-v12-korean_latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-500.woff') format('woff'), /* Modern Browsers */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-500.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+
+/* noto-sans-kr-700 - korean_latin */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/noto-sans-kr-v12-korean_latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),
+  	url('../fonts/noto-sans-kr-v12-korean_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-700.woff') format('woff'), /* Modern Browsers */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  	url('../fonts/noto-sans-kr-v12-korean_latin-700.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+
+/* noto-sans-sc-regular - latin_chinese-simplified */
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-regular.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans SC Regular'), local('NotoSansSC-Regular'),
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-regular.woff') format('woff'), /* Modern Browsers */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-regular.svg#NotoSansSC') format('svg'); /* Legacy iOS */
+}
+
+/* noto-sans-sc-500 - latin_chinese-simplified */
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-500.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans SC Medium'), local('NotoSansSC-Medium'),
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-500.woff2') format('woff2'), /* Super Modern Browsers */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-500.woff') format('woff'), /* Modern Browsers */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-500.ttf') format('truetype'), /* Safari, Android, iOS */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-500.svg#NotoSansSC') format('svg'); /* Legacy iOS */
+}
+
+/* noto-sans-sc-700 - latin_chinese-simplified */
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-700.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans SC Bold'), local('NotoSansSC-Bold'),
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-700.woff2') format('woff2'), /* Super Modern Browsers */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-700.woff') format('woff'), /* Modern Browsers */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  	url('../fonts/noto-sans-sc-v9-latin_chinese-simplified-700.svg#NotoSansSC') format('svg'); /* Legacy iOS */
+}
+
+/* common_style_guide */
+
+a:hover{
+	color: #2452d9;
+	cursor: pointer;
+}
+
+.font_disable a:hover{
+	color: #000000;
+}
+
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* font_style_guide */
+
+h1{
+	font-size: 2.750em;
+	font-weight: 700;
+	line-height: 1.23;
+}
+
+h2{
+	font-size: 2.125em;
+	font-weight: 500;
+	line-height: 1.47;
+}
+
+h3{
+	font-size: 2em;
+	font-weight: 700;
+}
+
+h4{
+	font-size: 1.625em;
+	font-weight: 700;
+}
+
+h5{
+	font-size: 1.250em;
+	font-weight: 700;
+}
+
+h6{
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.88;
+}
+
+.p__detail{
+	font-size: 1em;
+	line-height: 1.88;
+}
+
+.font_weight_bold{
+	font-weight: bold;
+}
+
+.font_color_darkblue{
+	color: #2233a3;
+}
+
+.font_disable{
+	opacity: 0.3;
+}
+
+/* layout_style_guide */
+
+.div__layout_container{
+	box-sizing: border-box;
+	max-width: 1280px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+
+.only_pc{
+	display: inline-block !important;
+}
+
+.only_mobile{
+	display: none !important;
+}
+
+/* button_style_guide */
+
+button{
+	cursor: pointer;
+	border-radius: 4px;
+	transition: 0.3s;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.btn_style_01{
+	background-color: #2233a3;
+	color: #ffffff;
+	box-shadow: 0 3px 10px 0 rgba(25, 41, 86, 0.3);
+}
+
+.btn_style_01:hover{
+	background-color: #2452d9;
+}
+
+.btn_style_01:active{
+	background-color: #2233a3;
+}
+
+.btn_style_02{
+	background-color: #121a37;
+	color: #ffffff;
+	box-shadow: 0 3px 10px 0 rgba(25, 41, 86, 0.3);
+}
+
+.btn_style_02:hover{
+	background-color: #182657;
+}
+
+.btn_style_02:active{
+	background-color: #121a37;
+}
+
+.btn_style_03{
+	background-color: #ffffff;
+	color: #2233a3;
+	box-shadow: 0 3px 10px 0 rgba(25, 41, 86, 0.3);
+}
+
+.btn_style_03:hover{
+	background-color: #e6ecff;
+}
+
+.btn_style_03:active{
+	background-color: #ffffff;
+}
+
+/* input_style_guide */
+
+input:-ms-input-placeholder{
+	color: #666666;
+	font-size: 0.875em;
+}
+
+input::-webkit-input-placeholder{
+	color: #666666;
+	font-size: 0.875em;
+}
+
+input::-moz-placeholder{
+	color: #666666;
+	font-size: 0.875em;
+}
+
+/* textarea_style_guide */
+
+textarea:-ms-input-placeholder{
+	color: #666666;
+	font-size: 0.875em;
+}
+
+textarea::-webkit-input-placeholder{
+	color: #666666;
+	font-size: 0.875em;
+}
+
+textarea::-moz-placeholder{
+	color: #666666;
+	font-size: 0.875em;
+}
+
+/* modal_popup_style_guide */
+
+.section__modal_popup{
+	display: none;
+}
+
+.section__modal_popup.active{
+	display: block;
+}
+
+.div__modal_popup_bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.div__modal_popup_contents{
+	z-index: 100;
+}
+
+.section__modal_popup .div__modal_popup_close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: -30px;
+	cursor: pointer;
+}
+
+/* TABLET ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:1279px){
+
+	/* modal_popup_style_guide */
+
+	.section__modal_popup .div__modal_popup_header_menu .div__modal_popup_close{
+		top: 40px;
+		right: 40px;
+		margin-right: 0;
+	}
+
+	.section__modal_popup .div__modal_popup_header_menu .div__modal_popup_close svg{
+		width: 40px;
+		height: 40px;
+	}
+
+	.section__modal_popup .div__modal_popup_header_menu .div__modal_popup_close svg path{
+		fill: #2233a3;
+	}
+
+}
+
+/* MOBILE ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:767px){
+
+	/* common_style_guide */
+
+	body{
+		font-size: 14px !important;
+	}
+
+	/* font_style_guide */
+
+	h1{
+		font-size: 2.429em;
+		line-height: 1.27;
+	}
+
+	h2{
+		font-size: 1.857em;
+		line-height: 1.54;
+	}
+
+	h3{
+		font-size: 1.857em;
+	}
+
+	h4{
+		font-size: 1.857em;
+	}
+
+	h5{
+		font-size: 1.429em;
+	}
+
+	h6{
+		line-height: 1.71;
+	}
+
+	.p__detail{
+		line-height: 2.14;
+	}
+
+	/* layout_style_guide */
+
+	.div__layout_container{
+		padding: 0 16px;
+	}
+
+	.only_pc{
+		display: none !important;
+	}
+
+	.only_mobile{
+		display: inline-block !important;
+	}
+
+	/* modal_popup_style_guide */
+
+	.section__modal_popup .div__modal_popup_close{
+		top: 24px !important;
+		right: 16px !important;
+		margin-right: 0;
+	}
+
+	.section__modal_popup .div__modal_popup_close svg{
+		width: 26px !important;
+		height: 26px !important;
+	}
+
+	.section__modal_popup .div__modal_popup_close svg path{
+		fill: #2233a3;
+	}
+
+	/* input_style_guide */
+
+	input:-ms-input-placeholder{
+		font-size: 1em;
+	}
+
+	input::-webkit-input-placeholder{
+		font-size: 1em;
+	}
+
+	input::-moz-placeholder{
+		font-size: 1em;
+	}
+
+	/* textarea_style_guide */
+
+	textarea:-ms-input-placeholder{
+		font-size: 1em;
+	}
+
+	textarea::-webkit-input-placeholder{
+		font-size: 1em;
+	}
+
+	textarea::-moz-placeholder{
+		font-size: 1em;
+	}
+
+}

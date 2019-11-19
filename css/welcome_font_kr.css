@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* 2019.10.11 kang nuri */
+/* font_kr.css */
+
+
+/**************************************************/
+
+/* common_style_guide */
+
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	word-break: keep-all;
+}

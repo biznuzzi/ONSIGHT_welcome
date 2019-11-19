@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* 2019.10.15 kang nuri */
+/* welcome_footer.css */
+
+
+/**************************************************/
+
+/* footer */
+
+footer{
+	padding: 40px 0;
+}
+
+.div__footer_left, .div__footer_right{
+	display: inline-block;
+}
+
+.div__footer_right{
+	font-size: 0.813em;
+	color: #999999;
+	float: right;
+}
+
+.div__footer_left_logo, .nav__footer_left_menu{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.div__footer_left_logo{
+	margin-right: 40px;
+	font-size: 0;
+}
+
+.div__footer_left_logo object{
+	width: 140px;
+}
+
+.ul__footer_left_menu_list{
+	box-sizing: border-box;
+	width: 140px;
+	padding-left: 20px;
+	float: left;
+}
+
+.ul__footer_left_menu_list li{
+	width: 100%;
+	line-height: 40px;
+	font-size: 0.875em;
+	font-weight: 500;
+	float: left;
+}
+
+.p__footer_right_contact{
+	width: 330px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #f4f4f4;
+	color: #333333;
+	margin-bottom: 10px;
+}
+
+/* TABLET ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:1279px){
+
+	.div__footer_left{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+}
+
+/* MOBILE ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:767px){
+
+	footer{
+		padding: 30px 0 20px 0;
+	}
+
+	.div__footer_right{
+		font-size: 0.786em;
+	}
+
+	.div__footer_left_logo{
+		display: block;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.div__footer_left_logo object{
+		width: 133px;
+	}
+
+	.nav__footer_left_menu{
+		display: block;
+	}
+
+	.ul__footer_left_menu_list{
+		width: 33.33%;
+		padding-left: 0;
+	}
+
+	.ul__footer_left_menu_list li{
+		height: 34px;
+		font-size: 0.857em;
+	}
+
+	.p__footer_right_contact{
+		width: 280px;
+		height: 34px;
+		line-height: 34px;
+	}
+
+}

@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+/* 2019.10.17 kang nuri */
+/* welcome_company.css */
+
+
+/**************************************************/
+
+/* section_company_intro */
+
+.section__company_intro{
+	padding: 275px 0;
+	background-image: url("../resource/images/company/bg-main.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.div__section_company_intro{
+	text-align: center;
+	color: #ffffff;
+}
+
+/* section_company_about */
+
+.div__section_company_about{
+	padding: 100px 0 160px 0;
+}
+
+.div__section_company_about h3{
+	display: none;
+}
+
+.ul__company_about_list li:first-child{
+	margin-bottom: 220px;
+}
+
+.div__list_company_about_image, .div__list_company_about_description{
+	box-sizing: border-box;
+	display: table-cell;
+	height: 500px;
+	vertical-align: middle;
+}
+
+.div__list_company_about_image{
+	width: 580px;
+}
+
+.div__list_company_about_image .div__image_box_bg{
+	position: absolute;
+	width: 40%;
+	height: 500px;
+	background-color: #fafafa;
+}
+
+.div__list_company_about_image .div__image_box{
+	position: relative;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	z-index: 10;
+}
+
+.ul__company_about_list li:nth-child(1) .div__image_box_bg{
+	left: 0;
+}
+
+.ul__company_about_list li:nth-child(1) .div__image_box{
+	background-image: url("../resource/images/company/img-section-01.jpg");
+}
+
+.ul__company_about_list li:nth-child(2) .div__image_box_bg{
+	right: 0;
+}
+
+.ul__company_about_list li:nth-child(2) .div__image_box{
+	background-image: url("../resource/images/company/img-section-02.jpg");
+}
+
+.div__list_company_about_description{
+	width: 620px;
+}
+
+.ul__company_about_list li:nth-child(1) .div__list_company_about_description{
+	padding-left: 40px;
+}
+
+.ul__company_about_list li:nth-child(1) .p__detail:first-child{
+	margin-bottom: 50px;
+}
+
+.ul__company_about_list .span__text{
+	display: block;
+	margin-bottom: 14px;
+}
+
+.ul__company_about_list .span__text:last-child{
+	margin-bottom: 0;
+}
+
+.ul__company_about_list .span__text.font_weight_bold{
+	margin-bottom: 22px;
+}
+
+.ul__company_about_list .font_weight_bold{
+	display: block;
+}
+
+.ul__company_about_list li:nth-child(2) .div__list_company_about_description{
+	padding-right: 40px;
+}
+
+.ul__company_about_list li:nth-child(2) .p__detail{
+	margin-bottom: 58px;
+}
+
+.ul__company_about_list li:nth-child(2) .p__detail:last-child{
+	margin-bottom: 0 !important;
+}
+
+/* section_company_history */
+
+.section__company_history{
+	background-color: #f8f8fa;
+}
+
+.div__section_company_history{
+	padding: 100px 0;
+	text-align: center;
+}
+
+.div__section_company_history h3{
+	margin-bottom: 100px;
+}
+
+.div__company_history_contents{
+	margin-left: 330px;
+	text-align: left;
+}
+
+.div__company_history_list_line{
+	box-sizing: border-box;
+	position: absolute;
+	margin-top: 248px;
+	margin-left: -115px;
+	width: 440px;
+	height: 2px;
+	border-top: dashed 1px #999999;
+	transform: rotate(90deg);
+}
+
+.ul__company_history_list li{
+	display: table-row;
+	margin-bottom: 24.5px;
+	font-size: 0.875em;
+}
+
+.ul__company_history_list li span{
+	display: table-cell;
+	vertical-align: middle;
+	height: 45px;
+}
+
+.ul__company_history_list li .span__year{
+	font-size: 2.500em;
+	letter-spacing: -1.6px;
+	padding-right: 30px;
+}
+
+.ul__company_history_list li .span__year span{
+	float: left;
+	margin-top: -8px;
+}
+
+.ul__company_history_list li .span__year.opacity1{
+	opacity: 0.2;
+}
+
+.ul__company_history_list li .span__year.opacity2{
+	opacity: 0.4;
+}
+
+.ul__company_history_list li .span__year.opacity3{
+	opacity: 0.6;
+}
+
+.ul__company_history_list li .span__year.opacity4{
+	opacity: 0.8;
+}
+
+.ul__company_history_list li .span__bullet{
+	position: relative;
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 6px;
+	background-color: #000000;
+	z-index: 10;
+}
+
+.ul__company_history_list li .span__month{
+	padding: 0 30px;
+	font-weight: 700;
+}
+
+/* TABLET ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:1279px){
+
+	/* common */
+
+	.only_pc{
+		display: none !important;
+	}
+
+	.only_mobile{
+		display: block !important;
+	}
+
+	/* section_company_intro */
+
+	.section__company_intro{
+		padding: 270px 0 230px 0;
+	}
+
+	/* section_company_about */
+
+	.section__company_about .div__layout_container{
+		padding: 0;
+	}
+
+	.div__section_company_about{
+		padding: 100px 0;
+	}
+
+	.ul__company_about_list li:first-child{
+		margin-bottom: 100px;
+	}
+
+	.div__list_company_about_image, .div__list_company_about_description{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.div__list_company_about_image{
+		background-color: #f8f8fa;
+	}
+
+	.div__list_company_about_image .div__image_box{
+		width: 580px;
+		height: 500px;
+		margin: 0 auto;
+	}
+
+	.div__list_company_about_description{
+		width: 660px;
+		margin: 0 auto;
+		padding: 30px 40px !important;
+	}
+
+	/* section_company_history */
+
+	.div__company_history_contents{
+		width: 620px;
+		margin-left: 0;
+		margin: 0 auto;
+	}
+
+}
+
+/* MOBILE ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:767px){
+
+	/* section_company_intro */
+
+	.section__company_intro{
+		padding: 195px 0 165px 0;
+	}
+
+	/* section_company_about */
+
+	.div__section_company_about{
+		padding: 50px 0 0 0;
+	}
+
+	.ul__company_about_list li:first-child{
+		margin-bottom: 0;
+	}
+
+	.div__list_company_about_image, .div__list_company_about_description{
+		width: 100%;
+	}
+
+	.div__list_company_about_image .div__image_box{
+		max-width: 360px;
+		width: 100%;
+		height: 310px;
+	}
+
+	.ul__company_about_list li:nth-child(1) .div__image_box{
+		background-image: url("../resource/images/company/img-section-01-m.jpg");
+	}
+
+	.ul__company_about_list li:nth-child(2) .div__image_box{
+		background-image: url("../resource/images/company/img-section-02-m.jpg");
+	}
+
+	.div__list_company_about_description{
+		padding: 30px 16px !important;
+	}
+
+	.ul__company_about_list li:nth-child(1) .p__detail:first-child{
+		margin-bottom: 40px;
+	}
+	.ul__company_about_list .span__text{
+		margin-bottom: 20px;
+	}
+
+	.ul__company_about_list .span__text.font_weight_bold{
+		margin-bottom: 20px;
+	}
+
+	.ul__company_about_list li:nth-child(2) .p__detail{
+		margin-bottom: 40px;
+	}
+
+	/* section_company_history */
+
+	.div__section_company_history{
+		padding: 50px 0 25px 0;
+	}
+
+	.div__section_company_history h3{
+		margin-bottom: 60px;
+	}
+
+	.div__company_history_contents{
+		width: 100%;
+	}
+
+	.div__company_history_list_line{
+		display: none;
+	}
+
+	.ul__company_history_list li{
+		font-size: 1em;
+	}
+
+	.ul__company_history_list li span{
+		vertical-align: top;
+		height: 20px;
+	}
+
+	.ul__company_history_list li .span__year{
+		font-size: 1em;
+		letter-spacing: normal;
+		font-weight: 700;
+		padding-right: 0;
+	}
+
+	.ul__company_history_list li .span__year.opacity1{
+		opacity: 1;
+	}
+
+	.ul__company_history_list li .span__year.opacity2{
+		opacity: 1;
+	}
+
+	.ul__company_history_list li .span__year.opacity3{
+		opacity: 1;
+	}
+
+	.ul__company_history_list li .span__year.opacity4{
+		opacity: 1;
+	}
+
+	.ul__company_history_list li .span__bullet{
+		display: none;
+	}
+
+	.ul__company_history_list li .span__year span{
+		float: none;
+	}
+
+	.ul__company_history_list li .span__month{
+		padding: 0 20px 0 10px;
+	}
+
+	.ul__company_history_list li .span__achievement{
+		padding-bottom: 25px;
+	}
+
+}
+
+
+/***********/
+/* LANG_EN */
+/***********/
+
+/* section_company_about */
+
+.lang_en .ul__company_about_list li:nth-child(1) .p__detail:first-child{
+	margin-bottom: 30px;
+}
+
+.lang_en .ul__company_about_list .span__text.font_weight_bold{
+	margin-bottom: 15px;
+}
+
+.lang_en .ul__company_about_list li:nth-child(2) .p__detail{
+	margin-bottom: 20px;
+}
+
+/* TABLET ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:1279px){
+
+	/* section_company_about */
+
+	.lang_en .ul__company_about_list li:nth-child(1) .p__detail:first-child{
+		margin-bottom: 50px;
+	}
+
+	.lang_en .ul__company_about_list .span__text.font_weight_bold{
+		margin-bottom: 22px;
+	}
+
+	.lang_en .ul__company_about_list li:nth-child(2) .p__detail{
+		margin-bottom: 50px;
+	}
+
+}

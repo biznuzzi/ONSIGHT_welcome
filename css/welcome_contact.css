@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* 2019.10.24 kang nuri */
+/* welcome_contact.css */
+
+
+/**************************************************/
+
+/* section_contact_us */
+
+.section__contact_us{
+	background-color: #f8f8fa;
+}
+
+.div__section_contact_us{
+	padding: 180px 0 100px 0;
+	text-align: center;
+}
+
+.div__section_contact_us h3{
+	margin-bottom: 20px;
+}
+
+.div__section_contact_us .p__detail{
+	margin-bottom: 60px;
+}
+
+.div__contact_us_contents{
+	width: 770px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+.div__contact_us_contents label{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.div__contact_us_input{
+	float: left;
+}
+
+.div__contact_us_contents .div__contact_us_input:first-child{
+	margin-right: 30px;
+}
+
+.div__contact_us_input input{
+	box-sizing: border-box;
+	width: 370px;
+	height: 50px;
+	border: 0;
+	padding: 0 20px;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.div__contact_us_textarea textarea{
+	box-sizing: border-box;
+	width: 100%;
+	height: 200px;
+	border: 0;
+	padding: 12px 20px;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+	resize: unset;
+}
+
+.button__contact_us{
+	width: 300px;
+	height: 50px;
+}
+
+/* TABLET ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:1279px){
+
+	/* section_contact_us */
+
+	.div__section_contact_us{
+		padding: 180px 0 110px 0;
+	}
+
+	.div__contact_us_contents{
+		max-width: 688px;
+		width: auto;
+	}
+
+	.div__contact_us_input input{
+		width: 330px;
+	}
+
+	.div__contact_us_contents .div__contact_us_input:first-child{
+		margin-right: 28px;
+	}
+
+}
+
+/* MOBILE ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:767px){
+
+	/* section_contact_us */
+
+	.div__section_contact_us{
+		padding: 105px 0 60px 0;
+	}
+
+	.div__section_contact_us h3{
+		margin-bottom: 10px;
+	}
+
+	.div__section_contact_us .p__detail{
+		margin-bottom: 30px;
+	}
+
+	.div__contact_us_contents{
+		margin-bottom: 0;
+	}
+
+	.div__contact_us_input{
+		display: block;
+		width: 100%;
+		margin-right: 0 !important;
+		margin-bottom: 40px;
+	}
+
+	.div__contact_us_input input{
+		width: 100%;
+	}
+
+	.div__contact_us_textarea{
+		margin-bottom: 40px;
+	}
+
+}
